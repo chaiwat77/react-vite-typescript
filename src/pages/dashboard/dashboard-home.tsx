@@ -31,7 +31,12 @@ const DashboardHome = () => {
         dispatch(getRoomBookingThunk());
     },[])
 
-    // console.log(JSON.stringify(roomBooking?.events));
+    const onSelectEvent =() => {
+      alert(JSON.stringify(roomBooking?.events));
+      // console.log(JSON.stringify(roomBooking?.events));
+    }
+
+    // 
     return ( 
         <>
         <h1>รายการจองห้องประชุม</h1>       
@@ -43,8 +48,8 @@ const DashboardHome = () => {
         startAccessor="start"
         endAccessor="end"
         showMultiDayTimes
-
-        style={{ height: 500 }}
+        onSelectEvent={onSelectEvent}
+        style={{ height: 600 }}
         />
         
         </>
