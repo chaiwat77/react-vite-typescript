@@ -5,7 +5,7 @@ export interface RoomBooking {
 export interface Event {
     id:         number;
     title:      string;
-    start:      Date;
-    end:        Date;
+    start:      string;
+    end:        string;
     created_by: string;
 }
