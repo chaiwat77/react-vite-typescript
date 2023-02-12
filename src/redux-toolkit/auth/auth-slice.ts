@@ -44,7 +44,7 @@ export const authSlice = createSlice({
     // updateProfile คือ action ที่ส่งออกไป
     updateProfileAction: state => {
       // state.profile ='Chaiwat Chuenchom Example'
-      state.profile ='admin'
+      state.profile ='admin@gmail.com'
       state.email = '123456'
       // state.email = 'jojo.chaiwat77@gmail.com Example'
     },
