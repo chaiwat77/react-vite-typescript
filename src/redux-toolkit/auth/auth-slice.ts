@@ -14,8 +14,8 @@ interface AuthState {
 
 // Define the initial state using that type
 const initialState: AuthState = {
-  profile: 'jojo Example',
-  email: 'jojo@gmail.com Example',
+  profile: 'jojotest@gmail.com',
+  email: '123456',
   loginResponse: null,
 }
 
@@ -43,8 +43,10 @@ export const authSlice = createSlice({
   reducers: {
     // updateProfile คือ action ที่ส่งออกไป
     updateProfileAction: state => {
-      state.profile ='Chaiwat Chuenchom Example'
-      state.email = 'chaiwat@gmail.com Example'
+      // state.profile ='Chaiwat Chuenchom Example'
+      state.profile ='admin'
+      state.email = '123456'
+      // state.email = 'jojo.chaiwat77@gmail.com Example'
     },
   },
   // ถ้าต้องการให้เป็น global state ถ้าใช้ unwarp เอาออกได้

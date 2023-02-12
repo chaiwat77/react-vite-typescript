@@ -28,8 +28,9 @@ import homepageStyle from '../styles/homepage.module.css';
           align={'center'}
           spacing={{ base: 8, md: 10 }}
           py={{ base: 20, md: 28 }}>
-            <p className='myTitle'>Welcome to project {authState.profile} </p>
-            <p className={homepageStyle.title}>hello  {authState.email}</p>
+            <p className='myTitle'>Welcome to project</p>
+            {/* <p className='myTitle'>Welcome to project {authState.profile} </p> */}
+            {/* <p className={homepageStyle.title}>hello  {authState.email}</p> */}
           <Heading
             fontWeight={600}
             fontSize={{ base: '3xl', sm: '4xl', md: '6xl' }}
